@@ -19,16 +19,16 @@ class ViewController: UIViewController {
 
     @IBAction func roll(_ sender: Any) {
         let images = [
-            UIImage(named: "DiceOne"),
-            UIImage(named: "DiceTwo"),
-            UIImage(named: "DiceThree"),
-            UIImage(named: "DiceFour"),
-            UIImage(named: "DiceFive"),
-            UIImage(named: "DiceSix"),
+            UIImage(imageLiteralResourceName: "DiceOne"),
+            UIImage(imageLiteralResourceName: "DiceTwo"),
+            UIImage(imageLiteralResourceName: "DiceThree"),
+            UIImage(imageLiteralResourceName: "DiceFour"),
+            UIImage(imageLiteralResourceName: "DiceFive"),
+            UIImage(imageLiteralResourceName: "DiceSix"),
         ]
-        
-        firstDice.image = images.randomElement()!
-        secondDice.image = images.randomElement()!
+                
+        firstDice.image = images.randomElement()
+        secondDice.image = images.randomElement()
     }
     
 }
